@@ -1,6 +1,12 @@
 -- Debris.lua
 
-local Destroy = game.Destroy
+local UseReplicatedDestroy = false
+local Destroy = UseReplicatedDestroy
+	and script.Parent:FindFirstChild(
+		"ReplicatedDestroy"
+	)
+
+	or game.Destroy
 
 return function(
 	seconds: number,
