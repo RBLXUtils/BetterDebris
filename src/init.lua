@@ -2,18 +2,7 @@
 
 local Destroy = game.Destroy
 
-local Debris = {}
-setmetatable(Debris, Debris)
-
-function Debris:UseRemove()
-	Destroy = game.Remove
-end
-
-function Debris:UseDestroy()
-	Destroy = game.Destroy
-end
-
-function Debris:__call(
+return function(
 	seconds: number,
 	instance: Instance
 )
@@ -31,5 +20,3 @@ function Debris:__call(
 		seconds, Destroy, instance
 	)
 end
-
-return Debris
