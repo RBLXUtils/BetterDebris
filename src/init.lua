@@ -1,4 +1,4 @@
--- Debris.lua
+-- BetterDebris.lua
 
 local UseReplicatedDestroy = false
 local Destroy = UseReplicatedDestroy
