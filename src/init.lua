@@ -7,7 +7,7 @@ local Destroy = UseReplicatedDestroy
 	or game.Destroy
 
 
--- Destroys an instnace in an specific amount of seconds 
+-- Destroys an instance in an specific amount of seconds 
 return function(
 	seconds: number,
 	instance: Instance
