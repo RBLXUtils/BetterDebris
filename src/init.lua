@@ -2,9 +2,7 @@
 
 local UseReplicatedDestroy = false
 local Destroy = UseReplicatedDestroy
-	and require(script.Parent:FindFirstChild(
-		"ReplicatedDestroy"
-	))
+	and require(script.Parent:FindFirstChild("ReplicatedDestroy"))
 
 	or game.Destroy
 
